@@ -1,4 +1,3 @@
-import image from "./shrish.png"
 
 export default function Example() {
     return (

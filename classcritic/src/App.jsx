@@ -1,29 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Landing from "./components/LandingPage"
+import School from "./components/School"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="box">
-      /* so here we'll add the nav bar */
-      <h1>Class Criqitue</h1>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Landing />}/>
+          <Route path={"\school"} element={<School />}/>
+        </Routes>
+      </BrowserRouter>
       
-      <h1>Login</h1>
-      <input type="text" placeholder='username'  />
-      <input type="password" placeholder='password' />
-      <div>
-        <button type="button">Login</button>
-      </div>
-      <div>
-        <a href="www.google.com">Sign up Here!</a>
-      </div>
     </div>
   )
 }
 
 export default App
-
-

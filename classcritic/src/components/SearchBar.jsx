@@ -1,48 +1,27 @@
-import React, { useState } from "react";
+import image from "./shrish.png"
 
-function SearchBar({ placeholder, data }) {
-    const [filteredData, setFilteredData] = useState([]);
-    const handleFilter = (event) => {
-        const searchWord = event.target.value;
-        const newFilter = data.filter((value) => {
-            return value?.classID?.toLowerCase().includes(searchWord.toLowerCase());
-
-        });
-        setFilteredData(newFilter);
-    };
+export default function Example() {
     return (
+      <div className="bg-white py-24 sm:py-32">
+          
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+            Classes
+          </h2>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS310</a>
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS211</a>
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS100</a>
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS467</a>
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS491</a>
+            <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CS471</a>
 
-        <div className="search">
-<           h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-              Search for classes            
-            </h1>            
-            <div className="searchInputs">
-                <input
-                    placeholder={placeholder} onChange={handleFilter}
-                    type="text"
-                    autoComplete="email"
-                    className="block w-full rounded-md border-0 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
 
-            </div>
-            {filteredData.length !== 0 &&
-                <div className="bg-rgb(4, 118, 16)">
-                    {filteredData.slice(0, 5).map((value, key) => {
-                        return <a className="w-full h-50 flex items-center text-black" href="(value.link)" target="_blank">
-                            <p>{value.classID}</p>
-                        </a>
 
-                    })}
-                </div>
-            }
+
+            
+          </div>
         </div>
-
-
-
-    );
-
-
-}
-export default SearchBar;
-
-
+      </div>
+    )
+  }

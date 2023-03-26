@@ -4,6 +4,8 @@ import Landing from "./components/LandingPage"
 import School from "./components/School"
 import Search from "./components/SearchBar"
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+// Import the functions you need from the SDKs you need
+
 
 
 function App() {

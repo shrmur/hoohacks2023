@@ -101,7 +101,7 @@ export default function Example() {
               Built By Students For Students            
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-                Discover the best college classes to take with genuine feedback from fellow students through Classcritic from your school.            </p>
+                Find the best college classes to take with genuine feedback from your fellow classmates through Classcritics from your school.            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link to="/school">
               <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

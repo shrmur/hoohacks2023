@@ -17,8 +17,6 @@ function App() {
           <Route index element={<Landing />}/>
           <Route path={"\school"} element={<School />}/>
           <Route path={"\search"} element={<Search />}/>
-
-
         </Routes>
       </BrowserRouter>
       

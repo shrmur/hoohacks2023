@@ -15,7 +15,10 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    
     <div className="bg-white">
+          <h1>&nbsp;</h1>
+                <h1>&nbsp;</h1>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -101,13 +104,13 @@ export default function Example() {
               Built By Students For Students            
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-                Find the best college classes to take with genuine feedback from your fellow classmates through Classcritics from your school.            </p>
+            Looking for the perfect college courses to take, but want genuine feedback from fellow students? Check out Classcritics, a platform where students at your school can share their honest opinions on classes they've taken, helping you make informed decisions about your academic journey.            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link to="/school">
-              <a className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              <button className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
+              </button>
               </Link>
             
             </div>
